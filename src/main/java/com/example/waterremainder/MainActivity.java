@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
-        //EditText editText = findViewById(R.id.editText);
+        
         TimePicker timePicker = findViewById(R.id.timePicker);
 
         // Intent
