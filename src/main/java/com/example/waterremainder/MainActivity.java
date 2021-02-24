@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 // Set Alarm
                 alarmManager.set(AlarmManager.RTC_WAKEUP, alarmStartTime, pendingIntent);
+                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,startTime.getTimeInMillis(), AlarmManager.INTERVAL_HALF_HOUR, pendingIntent);
                 Toast.makeText(this, "Done!", Toast.LENGTH_SHORT).show();
                 break;
 
